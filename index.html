@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Rose Candles: velas artesanales, aromáticas y decorativas para regalo, eventos y espacios especiales.">
+  <title>Rose Candles | Velas artesanales</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header" id="inicio">
+    <nav class="navbar" aria-label="Navegación principal">
+      <a class="brand" href="#inicio" aria-label="Rose Candles inicio">
+        <span class="brand-mark">R</span>
+        <span>Rose Candles</span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="primaryMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-menu" id="primaryMenu">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#catalogo">Catálogo</a></li>
+        <li><a href="#sobre-nosotros">Sobre nosotros</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-band" aria-labelledby="heroTitle">
+      <div class="hero-content">
+        <p class="eyebrow">Hechas a mano con detalle</p>
+        <h1 id="heroTitle">Velas artesanales para iluminar momentos especiales</h1>
+        <p class="hero-subtitle">Diseños únicos, aromas delicados y detalles hechos con amor.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#catalogo">Ver catálogo</a>
+          <a class="btn btn-secondary" id="heroWhatsapp" href="#" target="_blank" rel="noopener">Contactar por WhatsApp</a>
+        </div>
+      </div>
+      <div class="hero-media">
+        <img src="img/hero-candles.jpg" alt="Velas artesanales Rose Candles con flores secas y luz cálida">
+      </div>
+    </section>
+
+    <section class="values section-wrap" aria-labelledby="valuesTitle">
+      <div class="section-heading">
+        <p class="eyebrow">Detalles que se sienten</p>
+        <h2 id="valuesTitle">Calidez artesanal en cada pieza</h2>
+      </div>
+      <div class="values-grid">
+        <article class="value-card">
+          <span class="value-icon">✦</span>
+          <h3>Hechas a mano</h3>
+          <p>Cada vela se prepara con calma, cuidado y acabado artesanal.</p>
+        </article>
+        <article class="value-card">
+          <span class="value-icon">♡</span>
+          <h3>Aromas delicados</h3>
+          <p>Fragancias suaves para acompañar rutinas, regalos y espacios especiales.</p>
+        </article>
+        <article class="value-card">
+          <span class="value-icon">◇</span>
+          <h3>Ideales para regalo</h3>
+          <p>Presentaciones bonitas para cumpleaños, detalles y fechas importantes.</p>
+        </article>
+        <article class="value-card">
+          <span class="value-icon">✧</span>
+          <h3>Diseños personalizados</h3>
+          <p>Opciones sujetas a disponibilidad para eventos, colores y aromas.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="featured section-band" aria-labelledby="featuredTitle">
+      <div class="section-heading">
+        <p class="eyebrow">Selección especial</p>
+        <h2 id="featuredTitle">Productos destacados</h2>
+      </div>
+      <div class="product-grid featured-grid" id="featuredProducts" aria-live="polite"></div>
+    </section>
+
+    <section class="catalog section-wrap" id="catalogo" aria-labelledby="catalogTitle">
+      <div class="section-heading catalog-heading">
+        <div>
+          <p class="eyebrow">Catálogo visual</p>
+          <h2 id="catalogTitle">Explora nuestras velas</h2>
+        </div>
+        <p>Consulta disponibilidad, aromas y pedidos personalizados por WhatsApp.</p>
+      </div>
+
+      <div class="catalog-tools" aria-label="Filtros del catálogo">
+        <div class="search-field">
+          <label for="searchInput">Buscar producto</label>
+          <input type="search" id="searchInput" placeholder="Nombre, aroma o descripción">
+        </div>
+        <div class="filter-group" id="categoryFilters" aria-label="Filtrar por categoría"></div>
+      </div>
+
+      <p class="catalog-count" id="catalogCount"></p>
+      <div class="product-grid" id="catalogProducts" aria-live="polite"></div>
+      <p class="empty-state" id="emptyState" hidden>No encontramos velas con esos filtros.</p>
+    </section>
+
+    <section class="about section-band" id="sobre-nosotros" aria-labelledby="aboutTitle">
+      <div class="about-media">
+        <img src="img/about-candles.jpg" alt="Mesa de trabajo con velas artesanales Rose Candles">
+      </div>
+      <div class="about-content">
+        <p class="eyebrow">Sobre Rose Candles</p>
+        <h2 id="aboutTitle">Velas para decorar, regalar y transformar espacios</h2>
+        <p>En Rose Candles creamos velas artesanales pensadas para decorar, regalar y transformar espacios con aromas agradables y diseños únicos. Cada pieza se elabora con cuidado, buscando transmitir calidez, detalle y un toque especial en cada ambiente.</p>
+      </div>
+    </section>
+
+    <section class="contact section-wrap" id="contacto" aria-labelledby="contactTitle">
+      <div class="contact-panel">
+        <p class="eyebrow">Contacto</p>
+        <h2 id="contactTitle">¿Te interesa alguna vela?</h2>
+        <p>Escríbenos para consultar disponibilidad, colores, aromas o detalles personalizados.</p>
+        <div class="contact-actions">
+          <a class="btn btn-primary" id="contactWhatsapp" href="#" target="_blank" rel="noopener">WhatsApp</a>
+          <a class="btn btn-outline" id="instagramLink" href="https://www.instagram.com/rose_candles" target="_blank" rel="noopener">Instagram</a>
+        </div>
+        <span class="contact-note">Pedidos personalizados sujetos a disponibilidad.</span>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <a class="brand footer-brand" href="#inicio">
+          <span class="brand-mark">R</span>
+          <span>Rose Candles</span>
+        </a>
+        <p>Velas artesanales con aromas suaves, detalles delicados y diseño cálido.</p>
+      </div>
+      <div>
+        <h3>Enlaces</h3>
+        <a href="#inicio">Inicio</a>
+        <a href="#catalogo">Catálogo</a>
+        <a href="#sobre-nosotros">Sobre nosotros</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+      <div>
+        <h3>Redes</h3>
+        <a id="footerWhatsapp" href="#" target="_blank" rel="noopener">WhatsApp</a>
+        <a id="footerInstagram" href="https://www.instagram.com/rose_candles" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+    <p class="copyright">© <span id="currentYear"></span> Rose Candles. Todos los derechos reservados.</p>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" type="button" aria-label="Volver arriba">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
