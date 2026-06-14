@@ -1,18 +1,18 @@
-const WHATSAPP_NUMBER = "TU_NUMERO_AQUI";
-const INSTAGRAM_URL = "https://www.instagram.com/rose_candles";
+const WHATSAPP_NUMBER = "8341752530";
+const INSTAGRAM_URL = "https://www.instagram.com/rosecandles3";
 
 const categorias = ["Todas", "Aromáticas", "Decorativas", "Regalo", "Personalizadas", "Temporada"];
 
 const productos = [
   {
     id: 1,
-    nombre: "Vela Aurora Rosa",
+    nombre: "Vela Chocolate con Leche",
     categoria: "Aromáticas",
-    aroma: "Rosa y vainilla",
+    aroma: "Chocolate con Leche",
     tamaño: "Mediana",
-    precio: "$180 MXN",
-    descripcion: "Vela suave en vaso claro con aroma floral dulce para espacios tranquilos.",
-    imagen: "img/vela-1.jpg",
+    precio: "$250 MXN",
+    descripcion: "Vela suave en vaso claro con aroma aroma dulce y envolvente a chocolate con leche.",
+    imagen: "img/Vela-chocolate.jpeg",
     destacado: true
   },
   {
